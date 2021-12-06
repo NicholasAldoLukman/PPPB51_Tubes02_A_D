@@ -1,102 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/baby_blue"
-    tools:context=".MainActivity">
-
-    <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="400dp"
-        android:orientation="vertical"
-        android:background="@color/midnight_blue"
-        android:layout_centerInParent="true"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/dark_blue"
-            android:text="@string/login"
-            android:textAlignment="center"
-
-            android:textSize="30dp"
-            android:textColor="@color/ivory"
-            />
+    android:background="@color/baby_blue">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/baby_blue"
+        tools:context=".MainActivity">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="60dp">
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:background="@color/midnight_blue"
+            android:layout_centerInParent="true"
+            >
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:text="Username :"
-                android:textColor="@color/ivory"
-                android:paddingLeft="10dp"
-                android:textSize="25dp"
-
-                />
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:layout_marginRight="5dp"
-                android:background="@color/ivory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/dark_blue"
+                android:text="@string/login"
                 android:textAlignment="center"
-                android:hint="Enter Username"
-                />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="60dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:text="Password :"
+                android:textSize="30dp"
                 android:textColor="@color/ivory"
-                android:paddingLeft="10dp"
-                android:textSize="25dp"
-
-                />
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:layout_marginRight="5dp"
-                android:background="@color/ivory"
-                android:textAlignment="center"
-                android:hint="Enter Password"
                 />
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="60dp">
-            <Button
-                android:layout_width="200dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/ivory"
-                />
+                android:orientation="horizontal"
+                android:layout_marginTop="60dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Username :"
+                    android:textColor="@color/ivory"
+                    android:paddingLeft="10dp"
+                    android:textSize="25dp"
+
+                    />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/ivory"
+                    android:textAlignment="center"
+                    android:hint="Enter Username"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="60dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Password :"
+                    android:textColor="@color/ivory"
+                    android:paddingLeft="10dp"
+                    android:textSize="25dp"
+
+                    />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/ivory"
+                    android:textAlignment="center"
+                    android:hint="Enter Password"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="60dp">
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/ivory"
+                    />
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
-
-</RelativeLayout>
+</FrameLayout>
