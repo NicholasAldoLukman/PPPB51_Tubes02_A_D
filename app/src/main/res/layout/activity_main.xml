@@ -1,102 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout"
     android:layout_height="match_parent"
-    android:background="@color/baby_blue"
-    tools:context=".MainActivity">
-
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/midnight_blue"
-        android:layout_centerInParent="true"
         >
-        <TextView
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/dark_blue"
-            android:text="@string/login"
-            android:textAlignment="center"
-
-            android:textSize="30dp"
-            android:textColor="@color/ivory"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             />
-
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="60dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:text="Username :"
-                android:textColor="@color/ivory"
-                android:paddingLeft="10dp"
-                android:textSize="25dp"
-
-                />
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:layout_marginRight="5dp"
-                android:background="@color/ivory"
-                android:textAlignment="center"
-                android:hint="Enter Username"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="60dp">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:text="Password :"
-                android:textColor="@color/ivory"
-                android:paddingLeft="10dp"
-                android:textSize="25dp"
-
-                />
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:layout_marginRight="5dp"
-                android:background="@color/ivory"
-                android:textAlignment="center"
-                android:hint="Enter Password"
-                />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="60dp">
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/ivory"
-                />
-
-        </LinearLayout>
-
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container"/>
 
     </LinearLayout>
 
 
-</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_height="match_parent"
+        android:layout_width="240dp"
+        android:layout_gravity="start">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.tubes2_p3b.FragmentLeftDrawer"
+            tools:ignore="MissingClass" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+
+
+
+
+
+
+
