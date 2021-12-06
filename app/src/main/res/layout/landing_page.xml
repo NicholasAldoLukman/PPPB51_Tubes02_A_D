@@ -13,14 +13,34 @@
         android:layout_height="match_parent"
         android:background="@color/baby_blue">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="350dp"
             android:layout_height="500dp"
             android:orientation="vertical"
             android:background="@color/midnight_blue"
             android:layout_centerInParent="true">
 
-        </LinearLayout>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="200dp"
+                android:id="@+id/iv_bus"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/newbus"
+                />
+            <TextView
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:id="@+id/textlandpage"
+                android:textSize="25dp"
+                android:textColor="@color/ivory"
+                android:text="The number 1 choice for your destination trip press the order button to start your journey"
+                />
+
+        </RelativeLayout>
 
         <Button
             android:id="@+id/order_now"
