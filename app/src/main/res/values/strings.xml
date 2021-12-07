@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Tubes2_P3B</string>
     <string name="login">LOGIN</string>
+    <string name="details">Details</string>
+    <string name="order">Order</string>
 </resources>
