@@ -14,7 +14,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.spash_screen);
-
+        getSupportActionBar().hide();
         final Handler handler =new Handler();
         handler.postDelayed(new Runnable() {
             @Override
