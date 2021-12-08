@@ -37,7 +37,7 @@
                 android:id="@+id/textlandpage"
                 android:textSize="25dp"
                 android:textColor="@color/ivory"
-                android:text="The number 1 choice for your destination trip press the order button to start your journey"
+                android:text="@string/desc"
                 />
 
         </RelativeLayout>

@@ -20,7 +20,7 @@
 
             android:drawableLeft="@drawable/ic_baseline_home_24"
             android:drawablePadding="10dp"
-            android:text="HOME"/>
+            android:text="@string/home"/>
         <TextView
             android:id="@+id/hist"
             android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
 
             android:drawableLeft="@drawable/ic_baseline_history_24"
             android:drawablePadding="10dp"
-            android:text="HISTORY"/>
+            android:text="@string/history"/>
         <TextView
             android:id="@+id/Exit"
             android:padding="12dp"
@@ -37,7 +37,7 @@
             android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
             android:drawablePadding="10dp"
             android:layout_width="match_parent"
-            android:text="EXIT"/>
+            android:text="@string/exit"/>
 
 
 

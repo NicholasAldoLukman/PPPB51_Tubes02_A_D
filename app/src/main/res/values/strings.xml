@@ -3,4 +3,10 @@
     <string name="login">LOGIN</string>
     <string name="details">Details</string>
     <string name="order">Order</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="exit">Exit</string>
+    <string name="desc">The number 1 choice for your destination trip press the order button to start your journey</string>
+    <string name="ongoing">On Going</string>
+    <string name="completed">Completed</string>
 </resources>
